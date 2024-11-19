@@ -6,6 +6,6 @@ COPY ./requirements.txt /code/requirements.txt
 
 RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
-COPY ./projeto_final /code/projeto_final
+COPY ./devops-aula-final /code/devops-aula-final
 
-CMD ["fastapi", "run", "projeto_final/main.py", "--port", 80]
+CMD ["fastapi", "run", "devops-aula-final/main.py", "--port", 80]
